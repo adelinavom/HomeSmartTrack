@@ -13,6 +13,10 @@ package com.mycompany.homesmarttrack;
 public class HomeSmartTrack {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+javax.swing.SwingUtilities.invokeLater(() -> {
+    MainMenu menu = new MainMenu();
+    menu.setLocationRelativeTo(null);
+    menu.setVisible(true);
+});
     }
 }
