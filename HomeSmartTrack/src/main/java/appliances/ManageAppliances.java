@@ -6,8 +6,16 @@ package appliances;
 
 /**
  *
- * @author Adi
+ * @author Adelina
  */
-public class ManageAppliances {
+
+import com.mycompany.homesmarttrack.SummaryDisplay;
+
+public class ManageAppliances implements SummaryDisplay {
+    
+    @Override
+    public String getSummary() {
+        return "Appliance summary not done yet"; //java pwp notes
+    }
     
 }
