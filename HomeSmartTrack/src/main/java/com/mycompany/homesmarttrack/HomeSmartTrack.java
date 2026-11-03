@@ -13,6 +13,7 @@ package com.mycompany.homesmarttrack;
 public class HomeSmartTrack {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       MainMenu menu = new MainMenu();
+       menu.setVisible(true);
     }
 }
