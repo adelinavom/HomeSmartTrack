@@ -55,6 +55,7 @@ public class MainMenu extends javax.swing.JFrame {
         jButton3.addActionListener(this::jButton3ActionPerformed);
 
         jButton4.setText("Energy Saving Planner");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
 
         jLabel3.setText("Appliance Summary");
 
@@ -146,6 +147,14 @@ public class MainMenu extends javax.swing.JFrame {
         new appliances.AddApplianceForm().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+// Kyrylo Horiachyi: open the planner and close the main menu.
+savings.SavingsMenuForm form = new savings.SavingsMenuForm();
+form.setLocationRelativeTo(this);
+form.setVisible(true);
+this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
