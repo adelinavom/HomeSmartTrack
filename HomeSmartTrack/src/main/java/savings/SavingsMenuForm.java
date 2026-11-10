@@ -3,14 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package savings;
-
+import com.mycompany.homesmarttrack.SummaryDisplay;
 /**
  * Main screen for the Energy Saving Planner.
  * Opens the create and edit screens and returns to the main menu.
  *
  * @author Kyrylo Horiachyi
  */
-public class SavingsMenuForm extends javax.swing.JFrame {
+public class SavingsMenuForm extends javax.swing.JFrame implements SummaryDisplay {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(SavingsMenuForm.class.getName());
 
@@ -20,6 +20,12 @@ public class SavingsMenuForm extends javax.swing.JFrame {
     public SavingsMenuForm() {
         initComponents();
     }
+
+// Returns a placeholder until saving plan tracking is implemented.
+@Override
+public String getSummary() {
+    return "Saving plans summary not available yet";
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
