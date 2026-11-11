@@ -1,11 +1,13 @@
 package costs;
 
+import com.mycompany.homesmarttrack.SummaryDisplay;
+
 /**
  * Main screen for my section, the Electricity Cost Calculator.
  *
  * @author Samuel Sharpe
  */
-public class CostMenuForm extends javax.swing.JFrame {
+public class CostMenuForm extends javax.swing.JFrame implements SummaryDisplay {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(CostMenuForm.class.getName());
 
@@ -14,6 +16,12 @@ public class CostMenuForm extends javax.swing.JFrame {
      */
     public CostMenuForm() {
         initComponents();
+    }
+
+    // placeholder until the cost records are added in checkpoint 3
+    @Override
+    public String getSummary() {
+        return "Electricity cost summary not available yet";
     }
 
     /**
